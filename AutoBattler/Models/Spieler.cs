@@ -32,7 +32,7 @@ public class Spieler
     {
         Console.WriteLine($"{Name} greift {gegner.Name} an und macht {Schaden} Schaden!");
 
-        Leben -= Schaden;
+        gegner.Leben -= Schaden;
 
         if (gegner.Leben < 0)
         {
